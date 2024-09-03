@@ -1,25 +1,26 @@
-<article{{ attributes }} class="blog-type--technology">
+<article{{ attributes }} class="blog blog--technology">
 
   {{ title_prefix }}
   {% if label and not page %}
-    <h2{{ title_attributes }}>
-      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+    <h2{{ title_attributes }} class="blog__title">
+      <a href="{{ url }}" rel="bookmark" class="blog__link">{{ label }}</a>
     </h2>
   {% endif %}
   {{ title_suffix }}
 
   {% if display_submitted %}
-    <footer>
-      {{ author_picture }}
-      <div{{ author_attributes }}>
-        {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
+    <footer class="blog__footer">
+      {{ field_au }}
+      <div{{ author_attributes }} class="blog__author-info">
+        {% trans %}Submitted by {{ author_name }} on {{ field_published_date }}{% endtrans %}
         {{ metadata }}
       </div>
     </footer>
   {% endif %}
 
-  <div{{ content_attributes }}>
-    {{ content }}
+  <div{{ content_attributes }} class="blog__content">
+    {{ body }}
+    {{ field_blog_types }}
   </div>
 
 </article>
