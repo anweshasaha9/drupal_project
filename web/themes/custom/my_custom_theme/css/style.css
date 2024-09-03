@@ -1,0 +1,27 @@
+body {
+  background-color: yellow;
+}
+
+.blog-type--education {
+  background-color: #f0f8ff; /* Light blue */
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+.blog-type--business {
+  background-color: #fffacd; /* Light yellow */
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+.blog-type--clothing {
+  background-color: #e6e6fa !important; /* Light lavender */
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+.blog-type--technology {
+  background-color: aliceblue;
+  padding: 20px;
+  border: 1px solid #ddd;
+}

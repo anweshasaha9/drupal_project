@@ -1,0 +1,12 @@
+name: 'My Custom Theme'
+type: theme
+description: 'A custom theme using Stable as the base theme.'
+core_version_requirement: ^8 || ^9 || ^10
+base theme: stable9
+libraries:
+  - my_custom_theme/global-styling
+regions:
+  header: 'Header'
+  content: 'Content'
+  sidebar_left: 'Left Sidebar'
+  footer: 'Footer'

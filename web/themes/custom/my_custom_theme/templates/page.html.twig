@@ -1,0 +1,29 @@
+{{ attach_library('my_custom_theme/global-styling') }}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ head_title }}</title>
+    {{ head }}
+    {{ css }}
+    {{ js }}
+  </head>
+  <body class="{{ body_classes }}">
+    <header>
+      {{ page.header }}
+    </header>
+    <div id="main">
+      <aside id="sidebar-left">
+        {{ page.sidebar_left }}
+      </aside>
+      <div id="content">
+        {{ page.content }}
+      </div>
+    </div>
+    <footer>
+      {{ page.footer }}
+    </footer>
+  </body>
+</html>
