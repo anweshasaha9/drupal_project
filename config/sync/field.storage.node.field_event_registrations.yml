@@ -1,0 +1,19 @@
+uuid: 60abbdb1-19cc-44d8-b0fa-793aff6e4453
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_event_registrations
+field_name: field_event_registrations
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

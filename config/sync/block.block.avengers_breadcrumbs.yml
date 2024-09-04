@@ -1,0 +1,22 @@
+uuid: dac0a64f-4bdf-4f73-a2de-6c0ec9a2fddc
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - avengers
+_core:
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
+id: avengers_breadcrumbs
+theme: avengers
+region: breadcrumb
+weight: -7
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

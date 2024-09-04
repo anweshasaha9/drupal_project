@@ -1,0 +1,20 @@
+uuid: cb7f854e-d2b3-4f53-8a21-c19fffde96b6
+langcode: en
+status: true
+dependencies:
+  theme:
+    - avengers
+_core:
+  default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
+id: avengers_page_title
+theme: avengers
+region: header
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

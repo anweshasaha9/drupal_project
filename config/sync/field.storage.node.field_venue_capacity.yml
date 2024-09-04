@@ -1,0 +1,20 @@
+uuid: f2ccb5ff-55fa-4533-9990-63dd40bd5735
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_venue_capacity
+field_name: field_venue_capacity
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

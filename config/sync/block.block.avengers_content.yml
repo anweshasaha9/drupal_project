@@ -1,0 +1,22 @@
+uuid: 6f96f8f7-9fc7-4c1a-a352-9ccd6d7fe4c3
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - avengers
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: avengers_content
+theme: avengers
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

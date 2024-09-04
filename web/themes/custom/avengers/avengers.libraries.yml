@@ -1,0 +1,9 @@
+framework:
+  css:
+    theme:
+      css/style.css: {}
+
+event-overriden:
+  css:
+    theme:
+      css/event-overriden.css: {}

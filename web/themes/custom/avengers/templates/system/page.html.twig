@@ -1,0 +1,17 @@
+<div class="container-fluid">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    {{ page.navigation }}
+  </nav>
+  {{ page.breadcrumb }}
+  <div class="row">
+    <div class="col">{{ page.header }}</div>
+    <div class="col-xs-12 col-sm-12 col-md-2 col-2 col-lg-3">{{ page.sidebar_left }}</div>
+    <div class="col-xs-12 col-sm-12 col-md-8 col-8 col-lg-6">{{ page.content }}</div>
+    <div class="col-xs-12 col-sm-12 col-md-2 col-2 col-lg-3">{{ page.sidebar_right }}</div>
+  </div>
+  <footer aria-label="Site footer" class="footer" id="footer" role="contentinfo">
+    <div class="footer--top">
+      {{ page.footer }}
+    </div>
+  </footer>
+</div>
