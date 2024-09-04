@@ -1,0 +1,23 @@
+uuid: 7340cf21-70ea-4b9e-9fdb-4c7b203a94f9
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - avengers
+_core:
+  default_config_hash: yEBET0cqDbk8dkWzaJw-8CKft0961VBflsISoSR6Lj8
+id: avengers_search_form_narrow
+theme: avengers
+region: navigation
+weight: -5
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (narrow)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: d9374abd-2cd7-4697-a0b5-8ce967c28376
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - avengers
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: avengers_powered
+theme: avengers
+region: footer
+weight: -6
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

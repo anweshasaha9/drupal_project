@@ -1,0 +1,9 @@
+uuid: ff6264d7-56d4-4bd6-a630-edf5d0153a2c
+langcode: en
+status: true
+dependencies: {  }
+name: 'Event Tags'
+vid: event_tags
+description: null
+weight: 0
+new_revision: false

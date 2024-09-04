@@ -1,0 +1,24 @@
+uuid: 78aa6487-4570-4a9a-8111-8d269695e894
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.venue_user.field_user_contact
+    - field.field.node.venue_user.field_user_mail
+    - node.type.venue_user
+  module:
+    - user
+id: node.venue_user.teaser
+targetEntityType: node
+bundle: venue_user
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_user_contact: true
+  field_user_mail: true

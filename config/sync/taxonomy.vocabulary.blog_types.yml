@@ -1,0 +1,9 @@
+uuid: fbbbe2a7-a2cc-4611-9117-bbc2a1a8abed
+langcode: en
+status: true
+dependencies: {  }
+name: 'Blog Types'
+vid: blog_types
+description: null
+weight: 0
+new_revision: false
