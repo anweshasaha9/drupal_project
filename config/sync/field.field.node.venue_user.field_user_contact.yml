@@ -1,0 +1,23 @@
+uuid: a33914f8-de65-49d2-a70c-e01524f3015c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_user_contact
+    - node.type.venue_user
+id: node.venue_user.field_user_contact
+field_name: field_user_contact
+entity_type: node
+bundle: venue_user
+label: 'User Contact'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

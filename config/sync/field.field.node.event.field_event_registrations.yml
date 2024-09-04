@@ -1,0 +1,29 @@
+uuid: 30587475-ef06-4216-85f9-5c1fb6778c56
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_registrations
+    - node.type.event
+    - node.type.venue_user
+id: node.event.field_event_registrations
+field_name: field_event_registrations
+entity_type: node
+bundle: event
+label: 'Event Registrations'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      venue_user: venue_user
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

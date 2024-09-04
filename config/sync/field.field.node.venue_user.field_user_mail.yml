@@ -1,0 +1,19 @@
+uuid: b85ed5f5-cece-4b3f-bb71-62e063b1a5eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_user_mail
+    - node.type.venue_user
+id: node.venue_user.field_user_mail
+field_name: field_user_mail
+entity_type: node
+bundle: venue_user
+label: 'User E-Mail'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

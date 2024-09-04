@@ -1,0 +1,29 @@
+uuid: f165ae46-aaec-4b62-b2c2-aefe0b811127
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_blog_types
+    - node.type.blog
+    - taxonomy.vocabulary.blog_types
+id: node.blog.field_blog_types
+field_name: field_blog_types
+entity_type: node
+bundle: blog
+label: 'Blog Types'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      blog_types: blog_types
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

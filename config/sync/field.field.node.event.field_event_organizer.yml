@@ -1,0 +1,29 @@
+uuid: 75f2ca78-0344-4b9d-87c4-35ad75f6c610
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_organizer
+    - node.type.event
+id: node.event.field_event_organizer
+field_name: field_event_organizer
+entity_type: node
+bundle: event
+label: 'Event Organizer'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    filter:
+      type: _none
+    include_anonymous: true
+field_type: entity_reference

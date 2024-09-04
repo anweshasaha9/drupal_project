@@ -1,0 +1,23 @@
+uuid: 7842bd05-ca6a-4f87-b9dc-9fbec19f24f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_venue_capacity
+    - node.type.venue
+id: node.venue.field_venue_capacity
+field_name: field_venue_capacity
+entity_type: node
+bundle: venue
+label: 'Venue Capacity'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,37 @@
+uuid: b20f25d4-f147-4c94-abef-a9d8499833d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.venue_user.field_user_contact
+    - field.field.node.venue_user.field_user_mail
+    - node.type.venue_user
+  module:
+    - user
+id: node.venue_user.default
+targetEntityType: node
+bundle: venue_user
+mode: default
+content:
+  field_user_contact:
+    type: number_integer
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_user_mail:
+    type: basic_string
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

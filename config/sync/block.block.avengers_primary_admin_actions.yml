@@ -1,0 +1,20 @@
+uuid: a90e33ca-a4e1-4046-a407-39981eaed9e3
+langcode: en
+status: false
+dependencies:
+  theme:
+    - avengers
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: avengers_primary_admin_actions
+theme: avengers
+region: navigation
+weight: -2
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

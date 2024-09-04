@@ -1,0 +1,22 @@
+uuid: 96295735-ff95-4d66-bb84-fa3587d926e1
+langcode: en
+status: false
+dependencies:
+  theme:
+    - avengers
+_core:
+  default_config_hash: ydSxdq7R66I8UMC460rOzlfzvlUL4VRbdwc6z9DWaUI
+id: avengers_secondary_local_tasks
+theme: avengers
+region: navigation
+weight: 1
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }
