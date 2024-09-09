@@ -2,7 +2,43 @@
 
 /**
  * @file
- * Bootstrap sub-theme.
- *
- * Place your custom PHP code in this file.
+ * Avengers Theme.
  */
+
+/**
+ * Implements hook_theme_suggestions_node_alter().
+ */
+function avengers_theme_suggestions_node_alter(array &$suggestions, array $variables) {
+  // Get the node object from the variables.
+  $node = $variables["elements"]["#node"];
+  // Check if the node is valid and of type 'blog'.
+  if ($node && $node->getType() === 'blog') {
+    // Check if the field exists and is not empty.
+    if ($node->hasField('field_blog_types') && !empty($node->get('field_blog_types'))) {
+      // Get referenced taxonomy terms.
+      $terms = $node->get('field_blog_types')->referencedEntities();
+      // Loop through each term and add appropriate theme suggestions.
+      foreach ($terms as $term) {
+        $name = $term->getName();
+        // dump($name);
+        switch ($name) {
+          case 'Education':
+            $suggestions[] = 'node__blog__education';
+            break;
+          case 'Technology':
+            $suggestions[] = 'node__blog__technology';
+            break;
+          case 'Business':
+            $suggestions[] = 'node__blog__business';
+            break;
+          case 'Clothing':
+            $suggestions[] = 'node__blog__clothing';
+            break;
+          default:
+            break;
+        }
+        return $suggestions;
+      }
+    }
+  }
+}
