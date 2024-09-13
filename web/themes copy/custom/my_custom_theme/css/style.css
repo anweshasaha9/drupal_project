@@ -3,19 +3,19 @@ body {
 }
 
 .blog-type--education {
-  background-color: #f0f8ff; /* Light blue */
+  background-color: #f0f8ff;
   padding: 20px;
   border: 1px solid #ddd;
 }
 
 .blog-type--business {
-  background-color: #fffacd; /* Light yellow */
+  background-color: #fffacd;
   padding: 20px;
   border: 1px solid #ddd;
 }
 
 .blog-type--clothing {
-  background-color: #e6e6fa !important; /* Light lavender */
+  background-color: #e6e6fa !important;
   padding: 20px;
   border: 1px solid #ddd;
 }

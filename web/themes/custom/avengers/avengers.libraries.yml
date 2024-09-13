@@ -7,3 +7,28 @@ event-overriden:
   css:
     theme:
       css/event-overriden.css: {}
+
+blog-overriden:
+  css:
+    theme:
+      css/blog-overriden.css: {}
+
+technology-overriden:
+  css:
+    theme:
+      css/technology-overriden.css: {}
+
+education-overriden:
+  css:
+    theme:
+      css/education-overriden.css: {}
+
+clothing-overriden:
+  css:
+    theme:
+      css/clothing-overriden.css: {}
+
+business-overriden:
+  css:
+    theme:
+      css/business-overriden.css: {}
