@@ -1,0 +1,65 @@
+<?php
+
+/**
+ * @file
+ * Avengers Theme.
+ */
+
+/**
+ * Implements hook_theme_suggestions_node_alter().
+ */
+function avengers_theme_suggestions_node_alter(array &$suggestions, array $variables) {
+  // Get the node object from the variables.
+  $node = $variables["elements"]["#node"];
+  // Check if the node is valid and of type 'blog'.
+  if ($node && $node->getType() === 'blog') {
+    // Check if the field exists and is not empty.
+    if ($node->hasField('field_blog_types') && !empty($node->get('field_blog_types'))) {
+      // Get referenced taxonomy terms.
+      $terms = $node->get('field_blog_types')->referencedEntities();
+      // Loop through each term and add appropriate theme suggestions.
+      foreach ($terms as $term) {
+        $name = $term->getName();
+        // dump($name);
+        switch ($name) {
+          case 'Education':
+            $suggestions[] = 'node__blog__education';
+            break;
+          case 'Technology':
+            $suggestions[] = 'node__blog__technology';
+            break;
+          case 'Business':
+            $suggestions[] = 'node__blog__business';
+            break;
+          case 'Clothing':
+            $suggestions[] = 'node__blog__clothing';
+            break;
+          default:
+            break;
+        }
+        return $suggestions;
+      }
+    }
+  }
+}
+
+// Function to modify date field type in blog content type
+function avengers_theme_preprocess_node(array &$variables) {
+  // Check if the node is of type 'blog'.
+  if ($variables['node']->getType() === 'blog') {
+    // Check if the 'field_published_date' field exists and has a value.
+    if ($variables['node']->hasField('field_published_date') && !$variables['node']->get('field_published_date')->isEmpty()) {
+      // Get the field value.
+      $date_value = $variables['node']->get('field_published_date')->value;
+
+      // Create a DateTime object from the date value.
+      $date = new \DateTime($date_value);
+
+      // Format the date as "August 26, 2024".
+      $formatted_date = $date->format('F j, Y');
+
+      // Add the formatted date to the node variables.
+      $variables['field_published_date_formatted'] = $formatted_date;
+    }
+  }
+}
