@@ -69,6 +69,7 @@
 <div class="container-fluid clothing-container">
   <div class="clothing-container_title">
     <h3 class="clothing-container_title-heading">{{ label }}</h3>
+    <p>{{ test }}</p>
   </div>
   <div class="clothing-container_body">
     {{ content.body }}
@@ -80,22 +81,22 @@
       </div>
     </div>
   {% endif %}
-  {% if content.field_au or content.field_published_date %}
+  {% if content.field_au or field_published_date_formatted %}
     <div class="row clothing-container_blog-info">
-      {% if content.field_au and content.field_published_date %}
+      {% if content.field_au and field_published_date_formatted %}
         <div class="col-6 clothing-container_blog-info_author">
           {{ content.field_au }}
         </div>
         <div class="col-6 clothing-container_blog-info_published-date">
-          {{ content.field_published_date }}
+          {{ field_published_date_formatted }}
         </div>
-      {% elseif content.field_au and not content.field_published_date %}
+      {% elseif content.field_au and not field_published_date_formatted %}
         <div class="col-12 clothing-container_blog-info_author">
           {{ content.field_au }}
         </div>
-      {% elseif content.field_published_date and not content.field_au %}
+      {% elseif field_published_date_formatted and not content.field_au %}
         <div class="col-12 clothing-container_blog-info_published-date">
-          {{ content.field_published_date }}
+          {{ field_published_date_formatted }}
         </div>
       {% endif %}
     </div>

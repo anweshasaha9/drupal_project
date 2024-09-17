@@ -42,3 +42,31 @@ function avengers_theme_suggestions_node_alter(array &$suggestions, array $varia
     }
   }
 }
+
+function avengers_preprocess_node(array &$variables) {
+
+  // Implementation of hook preprocess to change date field format of blog content type
+  if ($variables['node']->getType() === 'blog') {
+    if ($variables['node']->hasField('field_published_date') && !$variables['node']->get('field_published_date')->isEmpty()) {
+      $date_field = $variables['node']->get('field_published_date')->value;
+
+      $date = new \DateTime($date_field);
+
+      $formatted_date = $date->format('F j, Y');
+
+      $variables['field_published_date_formatted'] = $formatted_date;
+    }
+  }
+
+
+  // Implementation of hook preprocess to change price field format of product content type
+  if ($variables['node']->getType() === 'products') {
+    if ($variables['node']->hasField('field_price') && !$variables['node']->get('field_price')->isEmpty()) {
+      $price = $variables['node']->get('field_price')->value;
+
+      $formatted_price = '$' . number_format($price, 2);
+
+      $variables['formatted_price'] = $formatted_price;
+    }
+  }
+}

@@ -65,39 +65,17 @@
  *   in different view modes.
  */
 #}
-{{ attach_library('avengers/blog-overriden') }}
-<div class="container-fluid blog-container">
-  <div class="blog-container_title">
-    <h3 class="blog-container_title-heading">{{ label }}</h3>
-  </div>
-  <div class="blog-container_body">
-    {{ content.body }}
-  </div>
-  {% if content.field_blog_types %}
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <h5 class="display-2">{{ content.field_blog_types }}</h5>
-      </div>
+<div class="products-container container-fluid">
+  <div class="card text-center text-white bg-dark mb-3">
+    <div class="card-body">
+      <h5 class="card-title">{{ label }}</h5>
+      <p class="card-text">{{ content.body }}</p>
     </div>
-  {% endif %}
-  {% if content.field_au or field_published_date_formatted %}
-    <div class="row blog-container_blog-info">
-      {% if content.field_au and field_published_date_formatted %}
-        <div class="col-6 blog-container_blog-info_author">
-          {{ content.field_au }}
-        </div>
-        <div class="col-6 blog-container_blog-info_published-date">
-          {{ field_published_date_formatted }}
-        </div>
-      {% elseif content.field_au and not field_published_date_formatted %}
-        <div class="col-12 blog-container_blog-info_author">
-          {{ content.field_au }}
-        </div>
-      {% elseif field_published_date_formatted and not content.field_au %}
-        <div class="col-12 blog-container_blog-info_published-date">
-          {{ field_published_date_formatted }}
-        </div>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      {% if formatted_price %}
+        <p class="lead">{{ formatted_price }}</p>
       {% endif %}
     </div>
-  {% endif %}
+  </div>
 </div>
