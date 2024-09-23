@@ -1,0 +1,27 @@
+.field--items {
+  display: flex;
+}
+
+.field--items img {
+  object-fit: cover;
+  aspect-ratio: 15 / 9;
+}
+
+.slick-arrow {
+  border: 0;
+  padding: 7px;
+  border-radius: 6px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  font-weight: 700;
+}
+
+.slick-prev {
+  margin-right: 5px;
+}
+
+.slick-next {
+  margin-left: 5px;
+}
