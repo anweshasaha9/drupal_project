@@ -37,6 +37,7 @@ image-slider:
   css:
     theme:
       css/image-slider.css: {}
+      https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap: { type : external }
   js:
     js/image-slider.js: {}
   dependencies:

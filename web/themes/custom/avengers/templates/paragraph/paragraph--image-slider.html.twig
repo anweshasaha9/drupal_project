@@ -41,11 +41,15 @@
 
 {{ attach_library('avengers/image-slider') }}
 {% block paragraph %}
-      {% if content.field_image is not empty %}
-        <div class="slick-slider">
-            <div class="slick-track">{{ content.field_image }}</div>
-        </div>
-      {% else %}
-        <p>No images available.</p>
-      {% endif %}
+	{% if content.field_image is not empty %}
+		<div class="slick-slider">
+			<div class="slick-track">{{ content.field_image }}</div>
+		</div>
+    <div class="btn-wrap">
+      <button class="prev-btn custom-btn">Previous</button>
+      <button class="next-btn custom-btn">Next</button>
+    </div>
+	{% else %}
+		<p>No images available.</p>
+	{% endif %}
 {% endblock paragraph %}
