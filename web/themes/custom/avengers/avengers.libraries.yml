@@ -32,3 +32,21 @@ business-overriden:
   css:
     theme:
       css/business-overriden.css: {}
+
+image-slider:
+  css:
+    theme:
+      css/image-slider.css: {}
+      https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap: { type : external }
+  js:
+    js/image-slider.js: {}
+  dependencies:
+    - core/jquery
+    - avengers/slick
+
+slick:
+  js:
+    assets/slick-master/slick/slick.min.js: {}
+  css:
+    theme:
+      assets/slick-master/slick/slick.css: {}

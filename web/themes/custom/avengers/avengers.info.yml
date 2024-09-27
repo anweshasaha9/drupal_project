@@ -18,3 +18,4 @@ regions:
 libraries-extend:
   bootstrap/framework:
     - avengers/framework
+    - avengers/image-slider
