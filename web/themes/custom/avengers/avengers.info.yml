@@ -19,3 +19,4 @@ libraries-extend:
   bootstrap/framework:
     - avengers/framework
     - avengers/image-slider
+    - avengers/pop-up

@@ -50,3 +50,11 @@ slick:
   css:
     theme:
       assets/slick-master/slick/slick.css: {}
+
+pop-up:
+  js:
+    js/pop-up.js: {}
+  css:
+    theme:
+      css/pop-up.css: {}
+      
