@@ -50,3 +50,7 @@ slick:
   css:
     theme:
       assets/slick-master/slick/slick.css: {}
+
+welcome-message:
+  js:
+    js/welcome-message: {}

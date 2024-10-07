@@ -70,3 +70,13 @@ function avengers_preprocess_node(array &$variables) {
     }
   }
 }
+function avengers_preprocess_page(array &$variables) {
+  // Checking if the user is logged in.
+  if (\Drupal::currentUser()->isAuthenticated()) {
+    // Getting logged-in user's display name.
+    $username = \Drupal::currentUser()->getDisplayName();
+
+    // Attach the welcome message to drupalSettings.
+    $variables['#attached']['drupalSettings']['welcomeMessage'] = t('Welcome back, !username!', ['!username' => $username]);
+  }
+}
