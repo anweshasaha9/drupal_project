@@ -1,21 +1,18 @@
-uuid: 0dab06b1-51f1-497c-94ec-5087ed52160b
+uuid: 57cc0ecd-a3ae-471c-add6-22afb4165ec0
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.blog.body
-    - field.field.node.blog.field_au
-    - field.field.node.blog.field_blog_types
-    - field.field.node.blog.field_published_date
-    - field.field.node.blog.field_slider
-    - node.type.blog
+    - field.field.node.product.body
+    - field.field.node.product.field_product_feature
+    - node.type.product
   module:
     - text
     - user
-id: node.blog.teaser
+id: node.product.teaser
 targetEntityType: node
-bundle: blog
+bundle: product
 mode: teaser
 content:
   body:
@@ -32,7 +29,4 @@ content:
     weight: 100
     region: content
 hidden:
-  field_au: true
-  field_blog_types: true
-  field_published_date: true
-  field_slider: true
+  field_product_feature: true

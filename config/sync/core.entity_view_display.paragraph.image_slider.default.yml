@@ -1,0 +1,26 @@
+uuid: 16ae8165-b9df-4b29-8e21-0917c35394a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.image_slider.field_image
+    - paragraphs.paragraphs_type.image_slider
+  module:
+    - image
+id: paragraph.image_slider.default
+targetEntityType: paragraph
+bundle: image_slider
+mode: default
+content:
+  field_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

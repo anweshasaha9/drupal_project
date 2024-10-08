@@ -1,0 +1,31 @@
+uuid: 5e31dbe6-9141-4c4f-bde2-0c3b42818fb5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_slider
+    - node.type.blog
+    - paragraphs.paragraphs_type.image_slider
+  module:
+    - entity_reference_revisions
+id: node.blog.field_slider
+field_name: field_slider
+entity_type: node
+bundle: blog
+label: Slider
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      image_slider: image_slider
+    negate: 0
+    target_bundles_drag_drop:
+      image_slider:
+        weight: 2
+        enabled: true
+field_type: entity_reference_revisions

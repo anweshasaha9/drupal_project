@@ -1,0 +1,24 @@
+uuid: 5dead1de-7e23-4931-b065-863b07d150db
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.employee
+  module:
+    - text
+id: node.employee.body
+field_name: body
+entity_type: node
+bundle: employee
+label: Bio
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

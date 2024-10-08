@@ -1,0 +1,35 @@
+uuid: 9e587224-dbd3-41cb-a027-a39a042ba599
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hero_banner_image
+    - node.type.h
+  module:
+    - entity_reference_revisions
+id: node.h.field_hero_banner_image
+field_name: field_hero_banner_image
+entity_type: node
+bundle: h
+label: 'Hero Banner Image'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles: {  }
+    negate: 0
+    target_bundles_drag_drop:
+      hero_banner_image:
+        weight: 4
+        enabled: true
+      hero_banner_text:
+        weight: 5
+        enabled: false
+      image_slider:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

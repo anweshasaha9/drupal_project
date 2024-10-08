@@ -1,22 +1,23 @@
-uuid: 327f8144-afa2-4774-a13d-8739915834b1
+uuid: b5f5254d-a227-4b09-b36b-3da899c871e3
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.blog.body
-    - field.field.node.blog.field_au
-    - field.field.node.blog.field_blog_types
-    - field.field.node.blog.field_published_date
-    - field.field.node.blog.field_slider
-    - node.type.blog
+    - field.field.node.employee.body
+    - field.field.node.employee.field_contact_information
+    - field.field.node.employee.field_department
+    - field.field.node.employee.field_job_title
+    - field.field.node.employee.field_profile_image
+    - field.field.node.employee.field_projects
+    - image.style.thumbnail
+    - node.type.employee
   module:
-    - datetime
-    - paragraphs
+    - image
     - path
     - text
-id: node.blog.default
+id: node.employee.default
 targetEntityType: node
-bundle: blog
+bundle: employee
 mode: default
 content:
   body:
@@ -35,49 +36,49 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_au:
-    type: entity_reference_autocomplete
-    weight: 122
-    region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  field_blog_types:
-    type: entity_reference_autocomplete
-    weight: 124
-    region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  field_published_date:
-    type: datetime_default
-    weight: 123
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_slider:
-    type: paragraphs
+  field_contact_information:
+    type: text_textfield
     weight: 125
     region: content
     settings:
-      title: Paragraph
-      title_plural: Paragraphs
-      edit_mode: open
-      closed_mode: summary
-      autocollapse: none
-      closed_mode_threshold: 0
-      add_mode: dropdown
-      form_display_mode: default
-      default_paragraph_type: ''
-      features:
-        collapse_edit_all: collapse_edit_all
-        duplicate: duplicate
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_department:
+    type: entity_reference_autocomplete
+    weight: 128
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_job_title:
+    type: string_textfield
+    weight: 124
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_profile_image:
+    type: image_image
+    weight: 122
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_projects:
+    type: entity_reference_autocomplete
+    weight: 127
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   path:
     type: path

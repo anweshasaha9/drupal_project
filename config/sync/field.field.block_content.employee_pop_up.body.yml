@@ -1,0 +1,24 @@
+uuid: ec132805-2f00-485b-8212-8167a8e1ba9f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.employee_pop_up
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.employee_pop_up.body
+field_name: body
+entity_type: block_content
+bundle: employee_pop_up
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

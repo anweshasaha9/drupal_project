@@ -1,22 +1,18 @@
-uuid: 327f8144-afa2-4774-a13d-8739915834b1
+uuid: a6dbabe5-ffe4-4905-a13a-6f227a0df6cf
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.blog.body
-    - field.field.node.blog.field_au
-    - field.field.node.blog.field_blog_types
-    - field.field.node.blog.field_published_date
-    - field.field.node.blog.field_slider
-    - node.type.blog
+    - field.field.node.product.body
+    - field.field.node.product.field_product_feature
+    - node.type.product
   module:
-    - datetime
     - paragraphs
     - path
     - text
-id: node.blog.default
+id: node.product.default
 targetEntityType: node
-bundle: blog
+bundle: product
 mode: default
 content:
   body:
@@ -35,35 +31,9 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_au:
-    type: entity_reference_autocomplete
-    weight: 122
-    region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  field_blog_types:
-    type: entity_reference_autocomplete
-    weight: 124
-    region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  field_published_date:
-    type: datetime_default
-    weight: 123
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_slider:
+  field_product_feature:
     type: paragraphs
-    weight: 125
+    weight: 122
     region: content
     settings:
       title: Paragraph

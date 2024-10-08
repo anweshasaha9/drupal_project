@@ -1,0 +1,20 @@
+.product-feature_list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  column-gap: 5px;
+}
+
+.product-feature_list-item {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.odd {
+  background-color: green;
+}
+
+.even {
+  background-color: red;
+}

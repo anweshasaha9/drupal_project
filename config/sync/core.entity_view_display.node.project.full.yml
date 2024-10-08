@@ -1,0 +1,47 @@
+uuid: d868e001-e6c6-470c-88b3-808f17428c60
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.project.field_project_manager
+    - field.field.node.project.field_team_members
+    - field.field.node.project.field_technical_architect
+    - node.type.project
+  module:
+    - user
+id: node.project.full
+targetEntityType: node
+bundle: project
+mode: full
+content:
+  field_project_manager:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_team_members:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_technical_architect:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

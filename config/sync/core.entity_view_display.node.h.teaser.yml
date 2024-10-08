@@ -1,0 +1,24 @@
+uuid: 22effb9e-a477-491f-8716-a7a41b1fea31
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.h.field_hero_banner_image
+    - field.field.node.h.field_hero_banner_text
+    - node.type.h
+  module:
+    - user
+id: node.h.teaser
+targetEntityType: node
+bundle: h
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_hero_banner_image: true
+  field_hero_banner_text: true
