@@ -1,0 +1,9 @@
+uuid: 0e7a60fd-525a-4d25-8f22-e148ed9f68ff
+langcode: en
+status: true
+dependencies: {  }
+name: 'Job Department'
+vid: job_description
+description: null
+weight: 0
+new_revision: false

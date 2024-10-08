@@ -50,3 +50,8 @@ slick:
   css:
     theme:
       assets/slick-master/slick/slick.css: {}
+
+product-overriden:
+  css:
+    theme:
+      css/product-overriden.css: {}

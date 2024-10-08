@@ -1,0 +1,54 @@
+uuid: fafe4a8c-e21d-43c4-acf5-1958562aa5ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.hero_banner_text.field_hero_banner_cta
+    - field.field.paragraph.hero_banner_text.field_hero_banner_description
+    - field.field.paragraph.hero_banner_text.field_hero_banner_image
+    - field.field.paragraph.hero_banner_text.field_title
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.hero_banner_text
+  module:
+    - image
+    - link
+id: paragraph.hero_banner_text.default
+targetEntityType: paragraph
+bundle: hero_banner_text
+mode: default
+content:
+  field_hero_banner_cta:
+    type: link_default
+    weight: 6
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_hero_banner_description:
+    type: string_textfield
+    weight: 5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_hero_banner_image:
+    type: image_image
+    weight: 3
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

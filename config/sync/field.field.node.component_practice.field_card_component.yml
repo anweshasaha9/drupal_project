@@ -1,0 +1,37 @@
+uuid: f095ea36-2d47-4b69-9ea2-d828ea9f6850
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_card_component
+    - node.type.component_practice
+    - paragraphs.paragraphs_type.card_component
+  module:
+    - entity_reference_revisions
+id: node.component_practice.field_card_component
+field_name: field_card_component
+entity_type: node
+bundle: component_practice
+label: 'Card Component'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      card_component: card_component
+    negate: 0
+    target_bundles_drag_drop:
+      card_component:
+        weight: 4
+        enabled: true
+      hero_banner_text:
+        weight: 5
+        enabled: false
+      image_slider:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

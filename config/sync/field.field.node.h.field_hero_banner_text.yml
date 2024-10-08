@@ -1,0 +1,37 @@
+uuid: d1d02720-2d21-40a5-897e-8c32496af65c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hero_banner_text
+    - node.type.h
+    - paragraphs.paragraphs_type.hero_banner_text
+  module:
+    - entity_reference_revisions
+id: node.h.field_hero_banner_text
+field_name: field_hero_banner_text
+entity_type: node
+bundle: h
+label: 'Hero Banner Text'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      hero_banner_text: hero_banner_text
+    negate: 0
+    target_bundles_drag_drop:
+      hero_banner_image:
+        weight: 4
+        enabled: false
+      hero_banner_text:
+        weight: 5
+        enabled: true
+      image_slider:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

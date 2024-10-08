@@ -1,0 +1,18 @@
+uuid: d4eafeb1-fe49-4980-8eb3-54e34424f383
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Project
+type: project
+description: null
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

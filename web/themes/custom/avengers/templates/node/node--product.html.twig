@@ -65,17 +65,25 @@
  *   in different view modes.
  */
 #}
-<div class="products-container container-fluid">
-  <div class="card text-center text-white bg-dark mb-3">
-    <div class="card-body">
-      <h5 class="card-title">{{ label }}</h5>
-      <p class="card-text">{{ content.body }}</p>
-    </div>
-  <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      {% if formatted_price %}
-        <p class="lead">{{ formatted_price }}</p>
-      {% endif %}
-    </div>
+{{ attach_library('avengers/product-overriden') }}
+
+<div class="product-content">
+  <div class="product-content_detail">
+    <h2>{{ label }}</h2>
+    <p>{{ content.body }}</p>
+  </div>
+
+  <div class="product-content_features">
+    {% if product_features %}
+      <ul class="product-feature_list">
+        {% for feature in product_features %}
+          <li class="product-feature_list-item {{ feature.class }}">
+            <h3>{{ feature.title }}</h3>
+            {{ feature.description|raw }}
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
   </div>
 </div>
+

@@ -1,0 +1,40 @@
+uuid: 55d6d3b6-210a-4cac-8448-f8d8eca3ecad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.h.field_hero_banner_image
+    - field.field.node.h.field_hero_banner_text
+    - node.type.h
+  module:
+    - entity_reference_revisions
+    - user
+id: node.h.default
+targetEntityType: node
+bundle: h
+mode: default
+content:
+  field_hero_banner_image:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_hero_banner_text:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

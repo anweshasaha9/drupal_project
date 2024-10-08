@@ -1,0 +1,22 @@
+uuid: 6844960a-2d88-4360-bbfb-51be1860688d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.employee_pop_up
+    - field.field.block_content.employee_pop_up.body
+  module:
+    - text
+id: block_content.employee_pop_up.default
+targetEntityType: block_content
+bundle: employee_pop_up
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

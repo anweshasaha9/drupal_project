@@ -1,0 +1,22 @@
+uuid: 2d74ba02-f17e-4ac1-b984-504f4bacc69c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contact_information
+    - node.type.employee
+  module:
+    - text
+id: node.employee.field_contact_information
+field_name: field_contact_information
+entity_type: node
+bundle: employee
+label: 'Contact Information'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

@@ -1,0 +1,24 @@
+uuid: 0f534f6e-127e-4f4b-836f-6e3a18262cf9
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.component_practice.field_card_component
+    - field.field.node.component_practice.field_hero_banner
+    - node.type.component_practice
+  module:
+    - user
+id: node.component_practice.teaser
+targetEntityType: node
+bundle: component_practice
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_card_component: true
+  field_hero_banner: true
