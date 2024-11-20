@@ -1,0 +1,29 @@
+uuid: 8465a55b-cce6-4e01-af9c-6e53c5f624b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_news_article_tags
+    - node.type.news_article
+    - taxonomy.vocabulary.news_article_tags
+id: node.news_article.field_news_article_tags
+field_name: field_news_article_tags
+entity_type: node
+bundle: news_article
+label: 'news article tags'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      news_article_tags: news_article_tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

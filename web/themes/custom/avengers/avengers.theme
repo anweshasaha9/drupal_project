@@ -69,4 +69,9 @@ function avengers_preprocess_node(array &$variables) {
       $variables['formatted_price'] = $formatted_price;
     }
   }
+  
+  if (!empty($variables['node']->field_publication_date->value)) {
+    // Convert the publication date field to a timestamp.
+    $variables['publication_date'] = strtotime($variables['node']->field_publication_date->value);
+  }
 }

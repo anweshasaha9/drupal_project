@@ -1,0 +1,9 @@
+uuid: e848d4f1-f2ec-42bb-a534-a4cd4ecde745
+langcode: en
+status: true
+dependencies: {  }
+name: 'news article tags'
+vid: news_article_tags
+description: null
+weight: 0
+new_revision: false
