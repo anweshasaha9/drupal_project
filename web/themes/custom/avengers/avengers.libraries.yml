@@ -50,3 +50,14 @@ slick:
   css:
     theme:
       assets/slick-master/slick/slick.css: {}
+
+team-member-overriden:
+  css:
+    theme:
+      css/team-member-overriden.css: {}
+
+
+base:
+    css:
+      theme:
+        css/base.css: {}
