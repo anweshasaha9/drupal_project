@@ -1,0 +1,22 @@
+uuid: 0cb21cf2-38b9-4f20-bee5-01c1959a7209
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bio
+    - node.type.team_member
+  module:
+    - text
+id: node.team_member.field_bio
+field_name: field_bio
+entity_type: node
+bundle: team_member
+label: Bio
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

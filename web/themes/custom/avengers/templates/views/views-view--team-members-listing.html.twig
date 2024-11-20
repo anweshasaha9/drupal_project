@@ -1,0 +1,32 @@
+{% import '@avengers/macro/team-member-macro.twig' as team %}
+
+<div class="view-team-members">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Title</th>
+                <th>Bio</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in rows %}
+                <tr>
+                    <td>
+                        {% if row['field_name'] is defined %}
+                            <h3>{{ row['field_name'].content }}</h3>
+                        {% endif %}
+
+                        {% if row['title'] is defined %}
+                            <p>{{ row['title'].content }}</p>
+                        {% endif %}
+
+                        {% if row['field_bio'] is defined %}
+                            <p>{{ row['field_bio'].content }}</p>
+                        {% endif %}
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
