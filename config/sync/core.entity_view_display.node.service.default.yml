@@ -1,0 +1,40 @@
+uuid: f65384a4-be66-4969-bec6-a1c6177c187e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.service.field_service_details
+    - field.field.node.service.field_testimonial
+    - node.type.service
+  module:
+    - entity_reference_revisions
+    - user
+id: node.service.default
+targetEntityType: node
+bundle: service
+mode: default
+content:
+  field_service_details:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_testimonial:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }
