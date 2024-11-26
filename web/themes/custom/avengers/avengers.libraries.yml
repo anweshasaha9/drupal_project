@@ -51,6 +51,7 @@ slick:
     theme:
       assets/slick-master/slick/slick.css: {}
 
+<<<<<<< HEAD
 welcome-message:
   css:
     theme:
@@ -62,3 +63,9 @@ news-article-overriden:
   css:
     theme:
       css/news-article-overriden.css: {}
+=======
+product-overriden:
+  css:
+    theme:
+      css/product-overriden.css: {}
+>>>>>>> 3a5fdd2109dedb0d92749d525e2566d30511ce17
