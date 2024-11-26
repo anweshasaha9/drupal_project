@@ -1,0 +1,24 @@
+uuid: fca5803a-de9f-45e8-9062-2cd7054d8a3f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_summary
+    - node.type.news_article
+  module:
+    - text
+id: node.news_article.field_summary
+field_name: field_summary
+entity_type: node
+bundle: news_article
+label: Summary
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

@@ -69,6 +69,12 @@ function avengers_preprocess_node(array &$variables) {
       $variables['formatted_price'] = $formatted_price;
     }
   }
+<<<<<<< HEAD
+  
+  if (!empty($variables['node']->field_publication_date->value)) {
+    // Convert the publication date field to a timestamp.
+    $variables['publication_date'] = strtotime($variables['node']->field_publication_date->value);
+=======
 
    // Handle 'product' content type: Process the paragraph field (Product Features)
    if ($variables['node']->hasField('field_product_feature') && !$variables['node']->get('field_product_feature')->isEmpty()) {
@@ -90,5 +96,6 @@ function avengers_preprocess_node(array &$variables) {
     }
 
     $variables['product_features'] = $features;
+>>>>>>> 3a5fdd2109dedb0d92749d525e2566d30511ce17
   }
 }
