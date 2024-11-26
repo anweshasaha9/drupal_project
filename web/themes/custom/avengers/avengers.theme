@@ -70,8 +70,31 @@ function avengers_preprocess_node(array &$variables) {
     }
   }
 
+<<<<<<< HEAD
   if (!empty($variables['node']->field_publication_date->value)) {
     // Convert the publication date field to a timestamp.
     $variables['publication_date'] = strtotime($variables['node']->field_publication_date->value);
+=======
+   // Handle 'product' content type: Process the paragraph field (Product Features)
+   if ($variables['node']->hasField('field_product_feature') && !$variables['node']->get('field_product_feature')->isEmpty()) {
+    $product_feature_field = $variables['node']->get('field_product_feature');
+
+    $features = [];
+    foreach ($product_feature_field as $index => $item) {
+      $paragraph = $item->entity;
+
+      if ($paragraph && $paragraph->hasField('field_feature_title') && $paragraph->hasField('field_feature_description')) {
+        $title = $paragraph->get('field_feature_title')->value;
+        $description = $paragraph->get('field_feature_description')->value;
+        $features[] = [
+          'title' => $title,
+          'description' => $description,
+          'class' => $index % 2 === 0 ? 'even' : 'odd',
+        ];
+      }
+    }
+
+    $variables['product_features'] = $features;
+>>>>>>> 3a5fdd2109dedb0d92749d525e2566d30511ce17
   }
 }

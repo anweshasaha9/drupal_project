@@ -51,6 +51,7 @@ slick:
     theme:
       assets/slick-master/slick/slick.css: {}
 
+<<<<<<< HEAD
 team-member-overriden:
   css:
     theme:
@@ -61,3 +62,9 @@ base:
     css:
       theme:
         css/base.css: {}
+=======
+product-overriden:
+  css:
+    theme:
+      css/product-overriden.css: {}
+>>>>>>> 3a5fdd2109dedb0d92749d525e2566d30511ce17

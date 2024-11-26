@@ -1,0 +1,37 @@
+uuid: 2ec11ba4-8d5f-4659-b4a6-418f40772525
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_product_features
+    - node.type.product
+    - paragraphs.paragraphs_type.product_feature
+  module:
+    - entity_reference_revisions
+id: node.product.field_product_features
+field_name: field_product_features
+entity_type: node
+bundle: product
+label: 'Product Features'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      product_feature: product_feature
+    negate: 0
+    target_bundles_drag_drop:
+      product_feature:
+        weight: 4
+        enabled: true
+      service_details:
+        weight: 5
+        enabled: false
+      testimonial:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions
