@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+{% block content %}
+  <div class="event-list">
+    <h2>Event List</h2>
+        {% for row in rows %}
+          {{ row['#rows'] | render }}
+        {% endfor %}
+  </div>
+{% endblock %}

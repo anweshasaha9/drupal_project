@@ -9,7 +9,9 @@ dependencies:
     - field.field.node.event.field_event_organizer
     - field.field.node.event.field_event_registrations
     - field.field.node.event.field_event_tags
+    - field.field.node.event.field_event_testimonial
     - field.field.node.event.field_event_venue
+    - field.field.node.event.field_location
     - node.type.event
   module:
     - text
@@ -37,4 +39,6 @@ hidden:
   field_event_organizer: true
   field_event_registrations: true
   field_event_tags: true
+  field_event_testimonial: true
   field_event_venue: true
+  field_location: true
