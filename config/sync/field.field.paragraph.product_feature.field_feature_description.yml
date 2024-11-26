@@ -1,0 +1,22 @@
+uuid: e711d345-308d-47bc-91c8-ffe10c083573
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_feature_description
+    - paragraphs.paragraphs_type.product_feature
+  module:
+    - text
+id: paragraph.product_feature.field_feature_description
+field_name: field_feature_description
+entity_type: paragraph
+bundle: product_feature
+label: 'Feature Description'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long
