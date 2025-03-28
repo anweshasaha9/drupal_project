@@ -1,0 +1,30 @@
+uuid: d6d17d5e-bb1b-4d3f-880b-d3f28b0ec93b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.service_details.field_details
+    - field.field.paragraph.service_details.field_feature
+    - paragraphs.paragraphs_type.service_details
+  module:
+    - text
+id: paragraph.service_details.default
+targetEntityType: paragraph
+bundle: service_details
+mode: default
+content:
+  field_details:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_feature:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

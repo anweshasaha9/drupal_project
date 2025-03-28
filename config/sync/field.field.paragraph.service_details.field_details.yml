@@ -1,0 +1,22 @@
+uuid: 02a31bde-beda-4d95-a042-32cff74d50ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_details
+    - paragraphs.paragraphs_type.service_details
+  module:
+    - text
+id: paragraph.service_details.field_details
+field_name: field_details
+entity_type: paragraph
+bundle: service_details
+label: Details
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text
