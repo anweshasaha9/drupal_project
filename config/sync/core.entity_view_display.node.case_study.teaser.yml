@@ -1,0 +1,22 @@
+uuid: c25441c5-c20e-4657-8023-a5eb17bdd267
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.case_study.field_case_study_testimonial
+    - node.type.case_study
+  module:
+    - user
+id: node.case_study.teaser
+targetEntityType: node
+bundle: case_study
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_case_study_testimonial: true

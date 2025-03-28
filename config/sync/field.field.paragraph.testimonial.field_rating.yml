@@ -1,0 +1,23 @@
+uuid: 5486e519-67c0-47ff-8d36-ba39a266e32a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_rating
+    - paragraphs.paragraphs_type.testimonial
+id: paragraph.testimonial.field_rating
+field_name: field_rating
+entity_type: paragraph
+bundle: testimonial
+label: Rating
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

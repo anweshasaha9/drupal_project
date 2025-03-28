@@ -1,0 +1,30 @@
+uuid: cf78e652-20e1-4cf4-a7db-6bad0499c4af
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.case_study.field_case_study_testimonial
+    - node.type.case_study
+  module:
+    - entity_reference_revisions
+    - user
+id: node.case_study.default
+targetEntityType: node
+bundle: case_study
+mode: default
+content:
+  field_case_study_testimonial:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }
