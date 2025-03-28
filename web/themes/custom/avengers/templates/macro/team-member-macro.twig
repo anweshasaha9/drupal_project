@@ -1,0 +1,10 @@
+{% macro team_member(field_photo, field_name, title, field_bio) %}
+    <div class="team-member-card">
+        <img src="{{ file_url(field_photo.entity.uri.value) }}" alt="{{ field_name.value }}'s photo" class="team-member-photo">
+        <div class="team-member-info">
+            <h3 class="team-member-name">{{ field_name.value }}</h3>
+            <p class="team-member-title">{{ title.value }}</p>
+            <p class="team-member-bio">{{ field_bio.value }}</p>
+        </div>
+    </div>
+{% endmacro %}
